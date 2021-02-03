@@ -38,7 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 85);
+            this.label1.Location = new System.Drawing.Point(59, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -46,14 +46,14 @@
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(145, 82);
+            this.txtusuario.Location = new System.Drawing.Point(143, 40);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 1;
             // 
             // txtpass
             // 
-            this.txtpass.Location = new System.Drawing.Point(145, 118);
+            this.txtpass.Location = new System.Drawing.Point(143, 76);
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '*';
             this.txtpass.Size = new System.Drawing.Size(100, 20);
@@ -62,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 121);
+            this.label2.Location = new System.Drawing.Point(59, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
@@ -70,9 +70,9 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(123, 173);
+            this.btnIngresar.Location = new System.Drawing.Point(109, 129);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.Size = new System.Drawing.Size(90, 59);
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -82,14 +82,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 333);
+            this.ClientSize = new System.Drawing.Size(282, 212);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmLogeo";
-            this.Text = "FrmLogeo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Logeo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

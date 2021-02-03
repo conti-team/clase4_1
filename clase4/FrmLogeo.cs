@@ -33,8 +33,10 @@ namespace clase4
             }else
             {
                 DatosInicio oDatos = new DatosInicio("codigoUsuario",usuario);
-                FrmMenuPrincipal oFrmMenuPrincipal = new FrmMenuPrincipal(oDatos);
-                oFrmMenuPrincipal.Show();
+                //FrmMenuPrincipal oFrmMenuPrincipal = new FrmMenuPrincipal(oDatos);
+                //oFrmMenuPrincipal.Show();
+                FrmPerfil ofrmPerfil = new FrmPerfil(oDatos);
+                ofrmPerfil.Show();
                 this.Hide();
             }
             

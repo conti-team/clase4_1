@@ -19,12 +19,35 @@ namespace clase4
             //datoUsuario = usuario;
             oDatosInicio.CodigoUsuario = datos.CodigoUsuario;
             oDatosInicio.NombreUsuario = datos.NombreUsuario;
+            oDatosInicio.NombrePerfil = datos.NombrePerfil;
             InitializeComponent();
         }
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-            this.Text = "Formulario Principal - Usuario Conectado: " + oDatosInicio.NombreUsuario;
+            cambiaTitulo();
+        }
+
+        private void cambiaTitulo()
+        {
+            this.Text = "Formulario Principal - Usuario Conectado: " + oDatosInicio.NombreUsuario + " - Perfil: " + oDatosInicio.NombrePerfil;
+        }
+
+        private void operacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOperaciones oFrmOperaciones = new FrmOperaciones(oDatosInicio);
+            oFrmOperaciones.Show();
+        }
+
+        private void perfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formPopup = new FrmPerfil(oDatosInicio);
+            DialogResult result = formPopup.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                oDatosInicio.NombrePerfil = formPopup.perfil;
+                cambiaTitulo();
+            }
         }
     }
 }
