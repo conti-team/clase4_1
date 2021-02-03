@@ -12,8 +12,8 @@ namespace clase4
 {
     public partial class FrmPerfil : Form
     {
-        public string perfil;
-        DatosInicio oDatos = new DatosInicio();
+        //public string perfil;
+        public DatosInicio oDatos = new DatosInicio();
         public FrmPerfil(DatosInicio DatosPerfil)
         {
             oDatos.CodigoUsuario = DatosPerfil.CodigoUsuario;
@@ -41,7 +41,7 @@ namespace clase4
                 else
                 {
                     oDatos.NombrePerfil= cmbPerfil.Text;
-                    this.perfil = oDatos.NombrePerfil;
+                    //this.perfil = oDatos.NombrePerfil;
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }

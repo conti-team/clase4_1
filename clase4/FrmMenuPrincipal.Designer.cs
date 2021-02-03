@@ -134,6 +134,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMenuPrincipal";
             this.Text = "FrmMenuPrincipal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMenuPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -45,9 +45,14 @@ namespace clase4
             DialogResult result = formPopup.ShowDialog();
             if (result == DialogResult.OK)
             {
-                oDatosInicio.NombrePerfil = formPopup.perfil;
+                oDatosInicio.NombrePerfil = formPopup.oDatos.NombrePerfil;
                 cambiaTitulo();
             }
+        }
+
+        private void FrmMenuPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
